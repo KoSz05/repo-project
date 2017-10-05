@@ -7,7 +7,7 @@ README.md: guessinggame.sh
 	echo "The guessinggame file composes of lines:">>README.md
 	wc -l guessinggame.sh|egrep -o "[0-9]+">>README.md
 	echo " "
-	echo "Last run of make:"`date +%D/%R`>>README.md
+	echo "\n Last run of make:"`date +%D/%R`>>README.md
 clean:
 	rm README.md
 
